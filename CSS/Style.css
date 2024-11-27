@@ -1,0 +1,194 @@
+h1{
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.24);
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    text-align: center;
+}
+p{
+    font-style: italic;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+input{
+    border: 2px;
+    text-align: center;
+    border-style: solid;
+    font-style: italic;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+select{
+    margin-right: 30px;
+    border: 2px;
+    border-style: solid;
+}
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-image: url(../IMG/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+main{
+    backdrop-filter: blur(10px);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align:center;
+}
+#OBS{
+    background-color: black;
+    padding: 0.5%;
+    width: fit-content;
+    font-size: 15px;
+    font-style: italic;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 320px) {
+    label{
+        font-size: 15px;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    input{
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+        font-size: 15px;
+    }
+    select{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    p{
+        font-size: 13px;
+    }
+    #IDSobrenome{
+        width: 200px;
+    }
+    #IDCPF{
+        width: 150px;
+    }
+    #IDCEP{
+        width: 150px;
+    }
+    #IDEndereço{
+        width: 200px;
+    }
+    #IDNumero{
+        width: 150px;
+    }
+    #IDEstado{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 375px) {
+    label{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    input{
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    select{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    #IDCPF{
+        width: 150px;
+    }
+    #IDCEP{
+        width: 150px;
+    }
+    #IDEndereço{
+        width: 200px;
+    }
+    #IDNumero{
+        width: 150px;
+    }
+    #IDEstado{
+        width: 150px;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    label{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    input{
+        text-align: center;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    select{
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    #IDCPF{
+        width: 200px;
+    }
+    #IDEstadoCivil{
+        width: 150px;
+    }
+    #IDCEP{
+        width: 200px;
+    }
+    #IDEndereço{
+        width: 200px;
+    }
+    #IDNumero{
+        width: 150px;
+    }
+    #IDEstado{
+        width: 150px;
+    }
+
+}
+@media screen and (min-width: 2560px){
+    body{
+        font-size: 25px;
+        background-size: cover;
+    }
+    #OBS{
+        font-size: 20px;
+    }
+    label{
+        font-size: 28px;
+    }
+    input{
+        font-size: 28px;
+        font-style: italic;
+    }
+    select{
+        font-size: 28px;
+    }
+    #IDDescrição{
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario1</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Usuario</h1>
+    </header>
+    <main>
+        <form action="">
+            <h2>Dados de Login e Senha</h2>
+
+            <label for="IDEMail">E-mail*:</label>
+            <input type="email" name="Email" id="IDEmail" required placeholder="Digite E-mail">
+
+            <label for="IDEMailConfirmar">Confirmar E-mail*:</label>
+            <input type="email" name="Email" id="IDEmailConfirmar"  required placeholder="Confirmar E-mail"><br><br>
+
+            <label for="IDSenha">Senha*:</label>
+            <input type="password" name="Senha" id="IDSenha" minlength="8" required placeholder="Min. 8 caracteres">
+
+            <label for="IDSenhaConfirmar">Confirmar Senha*:</label>
+            <input type="password" name="ConfirmarSenha" id="IDSenhaConfirmar" minlength="8" required placeholder="Confirmar Senha"><br><br>
+
+            <h2>Dados Pessoais</h2>
+
+            <label for="IDNome">Nome*:</label>
+            <input type="text" name="Nome" id="IDNome" required pattern="^[A-Z a-z áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$" title="Somente Letras"  placeholder="Digite Nome">
+
+            <label for="IDSobrenome">Sobrenome*:</label>
+            <input type="text" name="Sobrenome" id="IDSobrenome" required pattern="^[A-Z a-z áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$" title="Somente Letras" placeholder="Digite Sobrenome Sem Abreviação" size="30"><br><br>
+
+            <label for="IDCPF">CPF*:</label>
+            <input type="text" name="CPF" id="IDCPF" required maxlength="11" pattern="[0-9.-]+$" title="Somente Numeros" placeholder="sem . e -" size="12">
+            
+            <label for="IDNAscimento">Data de Nasc.*:</label>
+            <input type="date" name="Nascimento" id="IDNascimento" required><br><br>
+
+            <label for="IDTelefone">Telefone:</label>
+            <input type="text" name="Telefone" id="IDTelefone"  maxlength="11" pattern="[0-9]+$" title="Somente Numeros" placeholder="(99)99999-9999" size="13"><br><br>
+
+            <label for="IDEstadoCivil">Estado Civil:</label>
+            <select name="EstadoCivil" id="IDEstadoCivil">
+                <option value="-">----</option>
+                <option value="S">Solteiro</option>
+                <option value="C">Casado</option>
+                <option value="V">Viuvo</option>
+                <option value="D">Divorciado</option>
+                <option value="U">União Estável</option>
+            </select>
+            
+            <label for="IDGenero">Genero:</label>
+            <select name="Genero" id="IDGenero">
+                <option value="-">---</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="P">Prefiro não Informar</option>
+            </select><br><br>
+
+            <label for="IDCEP">CEP*:</label>
+            <input type="text" name="CEP" id="IDCEP" required maxlength="8" pattern="[0-9]+$" title="Somente Numeros" placeholder="99999-999" size="9">
+
+            <label for="IDEndereço">Rua/Avenida*:</label>
+            <input type="text" name="Endereço" id="IDEndereço" required  title="Somente Letras" placeholder="Ex: Av. Monsenhor de Melo " size="30">
+
+            <label for="IDNumero">N°*:</label>
+            <input type="text" name="Numero" id="IDNumero" required pattern="[0-9]+$" title="Somente Numeros" placeholder="99999" size="5"><br><br>
+
+            <label for="IDBairro">Bairro*:</label>
+            <input type="text" name="Bairro" id="IDBairro" required pattern="^[A-Z a-z áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ 0-9]+$" title="Não é permitido uso de caracteres especiais" placeholder="Informe Bairro" size="15">
+
+            <label for="IDCidade">Cidade*:</label>
+            <input type="text" name="Cidade" id="IDCidade"  required pattern="^[A-Z a-z áàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$" title="Somente Letras" placeholder="Informe Cidade" size="15">
+            
+            <label for="IDEstado">Estado*:</label>
+            <select name="Estado" id="IDEstado">
+                <option value="--"> -- </option> 
+                <option value="AC"> AC </option>
+                <option value="AL"> AL </option>
+                <option value="AP"> AP </option>
+                <option value="AM"> AM </option>
+                <option value="BA"> BA </option>
+                <option value="CE"> CE </option>
+                <option value="DF"> DF </option>
+                <option value="ES"> ES </option>
+                <option value="GO"> GO </option>
+                <option value="MA"> MA </option>
+                <option value="MT"> MT </option>
+                <option value="MS"> MS </option>
+                <option value="MG"> MG </option>
+                <option value="PA"> PA </option>
+                <option value="PB"> PB </option>
+                <option value="PR"> PR </option>
+                <option value="PE"> PE </option>
+                <option value="PI"> PI </option>
+                <option value="RJ"> RJ </option>
+                <option value="RN"> RN </option>
+                <option value="RS"> RS </option>
+                <option value="RO"> RO </option>
+                <option value="RR"> RR </option>
+                <option value="SC"> SC </option>
+                <option value="SP"> SP </option>
+                <option value="SE"> SE </option>
+                <option value="TO"> TO </option>
+            </select><br><br>
+            
+            <p id="OBS">Campos demarcados com * são obrigatorios</p><br>
+
+            <input type="submit" value="Enviar" id="Botao" />
+        </form>
+    </main>
+    <footer>
+        <p>Gabriel Paes, Prog Web I - 2021</p>
+    </footer>
+</body>
+</html>
